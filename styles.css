@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1D1D1F;
+}
+
+#header {
+  background: rgba(255, 255, 255, 0.36);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0px;
+  top: 0;
+}
+
+#header-img{
+  width: 40px;
+  height: 40px;
+  margin: 12px 10px;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+}
+
+#logo-desc {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#logo h2{
+  color: #a9a9a9;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+#logo h1{
+  font-size: 1.5em;
+}
+
+#nav-bar ul{
+  display: flex;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+#nav-bar li{
+  margin: 15px;
+}
+
+#nav-bar a{
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+#nav-bar a:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+#hero {
+  padding-top: 120px;
+  text-align: center;
+}
+
+#hero h2{
+  font-size: 3em;
+}
+
+#hero h1{
+  font-size: 4.5em;
+  margin: 20px;
+}
+
+#form{
+  margin: 30px 0 80px;
+}
+
+input{
+  line-height: 2em;
+  padding: 8px;
+  border-radius: 0.25em;
+  border: 1px solid #ced4da;
+  font-size: 1.1em;
+}
+
+#email{
+  width: 40%;
+}
+
+#submit{
+  background-color: #0071E3;
+  color: white;
+  margin-left: 10px;
+  padding: 8px 15px;
+}
+
+#submit:hover{
+  background-color: #147CE5;
+}
+
+.why{
+  display: flex;
+  align-items: center;
+  margin: 50px 15%;
+}
+
+.icon{
+  margin-right: 50px;
+}
+
+.description h2{
+  font-size: 2em;
+}
+
+.description p{
+  font-size: 1.2em;
+}
+
+#tech-specs{
+  text-align: center;
+  margin: 100px auto; 
+}
+
+#pricing{
+  display: flex;
+}
+
+@media (max-width: 1000px){
+  #pricing{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: calc(100%/3);
+  align-items: center;
+}
+
+.product ol{
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+.product h2{
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.level{
+  font-size: 1.5em;
+  font-weight: bold;
+}
